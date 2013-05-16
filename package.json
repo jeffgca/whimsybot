@@ -10,7 +10,8 @@
     },
     "dependencies": {
         "irc": "*",
-        "underscore": "*"
+        "underscore": "*",
+        "request": "~2.21.0"
     },
     "devDependencies": {},
     "optionalDependencies": {},
