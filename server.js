@@ -1,20 +1,7 @@
-var irc = require('irc'),
-  fs = require('fs'),
-  _ = require('underscore');
+var etherpad = require('./lib/etherpad'),
+  irc = require('irc');
 
-var raw = fs.readFileSync('./whimsy.txt');
-var txt = raw.toString();
-var lines = txt.split("\n");
-var whimsies = _.map(lines, function(line) {
-  if (! /^\#/.test(line) || line.trim().length > 0) {
-    return line;
-  }
-});
-
-function getWhimsy() {
-  var rand = Math.round(Math.random() * whimsies.length);
-  return whimsies[rand];
-};
+var getWhimsy = etherpad.load('urlbar-sayings');
 
 if (!module.parent) {
   var bot = new irc.Client('irc.mozilla.org', 'whimsy', {
