@@ -11,7 +11,7 @@ if (!module.parent) {
   });
 
   bot.addListener('message', function(from, to, message) {
-    if (/whimsybot/.test) {
+    if (/^whimsy/.test(message)) {
       bot.say(to, getWhimsy());
     }
   });
