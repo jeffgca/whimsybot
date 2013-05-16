@@ -8,7 +8,10 @@
         "type": "git",
         "url": "git://github.com/canuckistani/whimsybot"
     },
-    "dependencies": {"irc": "*"},
+    "dependencies": {
+        "irc": "*",
+        "underscore": "*"
+    },
     "devDependencies": {},
     "optionalDependencies": {},
     "engines": {
