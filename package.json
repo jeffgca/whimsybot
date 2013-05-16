@@ -1,0 +1,17 @@
+{
+    "author": "Jeff Griffiths (http://canuckistani.ca)",
+    "name": "whimsybot",
+    "description": "whimsybot",
+    "version": "0.1.1",
+    "homepage": "http://github.com/canuckistani/whimsybot",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/canuckistani/whimsybot"
+    },
+    "dependencies": {"irc": "*"},
+    "devDependencies": {},
+    "optionalDependencies": {},
+    "engines": {
+        "node": "*"
+    }
+}
